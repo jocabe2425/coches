@@ -8,9 +8,9 @@
 </head>
 <body class="body">
     <!-- Cabecera (Header) Unificada -->
-    <header class="header-container">
-        <img src="logo.png" alt="Logo Concesionario" class="logo">
-        <nav>
+    <header class="header-container" role="banner">
+        <img src="logo.png" alt="Logo del Concesionario GPX" class="logo">
+        <nav aria-label="Menú principal">
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -20,38 +20,45 @@
     </header>
 
     <!-- Banner de Inicio -->
-    <section class="banner">
-        <h1>Bienvenido a nuestro Concesionario</h1>
-        <p>Encuentra el coche de tus sueños con nosotros</p>
-        <a href="nosotros.html" class="btn">Descubre más</a>
-    </section>
+    <main>
+        <section class="banner" aria-labelledby="bienvenida-titulo">
+            <h1 id="bienvenida-titulo">Bienvenido a nuestro Concesionario</h1>
+            <p>Encuentra el coche de tus sueños con nosotros</p>
+            <a href="nosotros.html" class="btn" role="button">Descubre más</a>
+        </section>
 
-    <!-- Sección de Coches -->
-    <section class="coches">
-        <div class="coche-card">
-            <img src="coche1.png" alt="Coche 1">
-            <p>Modelo: Duesenberg Model J</p>
-            <p>Año: 1928-1937</p>
-            <p>Precio: 20.000€</p>
-            <p>Tipico de las decadas de los 30 en los EEUU.</p>
-            <p></p>
-        </div>
-        <div class="coche-card">
-            <img src="coche2.png" alt="Coche 2">
-            <p>Modelo: Porsche 356 Speedster</p>
-            <p>Año: 1954-1958</p>
-            <p>Precio: 30.000€</p>
-            <p>Revolucionario para su epoca en los finales de los '50.</p>
-        </div>
-        <div class="coche-card">
-            <img src="coche3.png" alt="Coche 3">
-            <p>Modelo: Citroën Traction Avant</p>
-            <p>Año: 1934-1957</p>
-            <p>Precio: 45.000€</p>
-            <p>Clasico y Elegante del siglo XX, 1950.</p>
-        </div>
-    </section>
-    <footer>
+        <!-- Sección de Coches -->
+        <section class="coches" aria-labelledby="titulo-coches">
+            <h2 id="titulo-coches">Nuestros modelos destacados</h2>
+
+            <article class="coche-card">
+                <img src="coche1.png" alt="Duesenberg Model J, años 1928 a 1937" />
+                <h3>Duesenberg Model J</h3>
+                <p><strong>Año:</strong> 1928–1937</p>
+                <p><strong>Precio:</strong> 20.000€</p>
+                <p>Típico de las décadas de los 30 en los EEUU.</p>
+            </article>
+
+            <article class="coche-card">
+                <img src="coche2.png" alt="Porsche 356 Speedster, años 1954 a 1958" />
+                <h3>Porsche 356 Speedster</h3>
+                <p><strong>Año:</strong> 1954–1958</p>
+                <p><strong>Precio:</strong> 30.000€</p>
+                <p>Revolucionario para su época a finales de los años 50.</p>
+            </article>
+
+            <article class="coche-card">
+                <img src="coche3.png" alt="Citroën Traction Avant, años 1934 a 1957" />
+                <h3>Citroën Traction Avant</h3>
+                <p><strong>Año:</strong> 1934–1957</p>
+                <p><strong>Precio:</strong> 45.000€</p>
+                <p>Clásico y elegante del siglo XX, década de 1950.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer role="contentinfo">
         <p>&copy; 2024 GPX's Concessionaire | Todos los derechos reservados.</p>
     </footer>
 </body>
